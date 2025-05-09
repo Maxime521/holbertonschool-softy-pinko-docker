@@ -1,5 +1,5 @@
-# Utiliser Nginx comme proxy
-FROM nginx:latest
+FROM nginx:alpine
 
-# Copier le fichier de configuration Nginx
-COPY proxy.conf /etc/nginx/conf.d/default.conf
+COPY ./proxy.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
